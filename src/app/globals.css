@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(151, 151, 151, 0.7);
+  border-radius: 5px;
+}
+body {
+  overflow-x: hidden;
+}
+.home-img{
+  height: 40vh;
+  width: 40vh;
+  background-image: url("../../public/me.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 20px 50px -10px #bb66e2;
+  margin: 0 auto;
+}
+
+.red-btn-shadow{
+  box-shadow: 0 8px 20px -7px #bb66e2;
+}
+.red-btn-shadow:hover{
+  box-shadow: 0 20px 80px -10px #bb66e2;
+}
+
+.css-1gtx2zw {
+  background-image: url(https://app.simplified.com/static/media/aw-waves-dark.3bef6a82.svg);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  max-height: 800px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -10;
+  filter: blur(90px);
+  will-change: filter;
+}
+
+.css-irwfw9 {
+  background-image: url(https://app.simplified.com/static/media/aw-waves-yellow.83caab5c.svg);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  filter: blur(90px);
+  will-change: filter;
+  transform: rotate(180deg);
+  z-index: -10;
+}
+
+:root {
+  --er: 71.76% .221 22.18;
+  --p: 65.69% .196 275.75;
+  --s: 74.8% .26 342.55;
+}
+
+.gradient-text {
+  background: linear-gradient(43deg, #7187f4 0%, #ec5ce2 35%, #FFCC70 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
