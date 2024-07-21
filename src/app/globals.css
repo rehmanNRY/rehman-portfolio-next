@@ -77,3 +77,27 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+
+.projects-list .project-item-img {
+  box-shadow: 0 8px 15px -7px #fec447;
+}
+.projects-list .project-item:hover .project-item-img {
+  box-shadow: 0 20px 70px -10px #fec447;
+}
+.projects-list .project_item:nth-child(2) .project-item-img,
+.projects-list .project_item:nth-child(5) .project-item-img  {
+  box-shadow: 0 8px 15px -7px #08fdd8;
+}
+.projects-list .project_item:nth-child(2) .project-item:hover .project-item-img,
+.projects-list .project_item:nth-child(5) .project-item:hover .project-item-img  {
+  box-shadow: 0 20px 70px -10px #08fdd8;
+}
+.projects-list .project_item:nth-child(3) .project-item-img,
+.projects-list .project_item:nth-child(6) .project-item-img  {
+  box-shadow: 0 8px 15px -7px #cd84f1;
+}
+.projects-list .project_item:nth-child(3) .project-item:hover .project-item-img,
+.projects-list .project_item:nth-child(6) .project-item:hover .project-item-img  {
+  box-shadow: 0 20px 70px -10px #cd84f1;
+}
