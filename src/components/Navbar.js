@@ -1,6 +1,18 @@
+"use client";
 import React from 'react'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Navbar = () => {
+  useGSAP(() => {
+    gsap.from("header li", {
+      y: -30,
+      duration: .4,
+      delay: .5,
+      opacity: 0,
+      stagger: 0.2
+    })
+  })
   return (
     // <header className="flex justify-between px-24 py-3 fixed w-full">
     <header className="flex justify-between px-24 py-3 fixed w-full z-40 backdrop-blur-md bg-[hsla(0,0%,7%,.25)]">
@@ -11,7 +23,9 @@ const Navbar = () => {
         <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
         <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-dribbble"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg></a></li>
       </ul>
-      <button className="border-2 font-semibold border-[#bb66e2] text-[#bb66e2] transition-all outline-none rounded-md px-6 py-2.5 hover:bg-[#bb66e2] hover:text-white red-btn-shadow hover:-translate-y-1">My Resume</button>
+      <ul>
+        <li><button className="border-2 font-semibold border-[#bb66e2] text-[#bb66e2] transition-all outline-none rounded-md px-6 py-2.5 hover:bg-[#bb66e2] hover:text-white red-btn-shadow hover:-translate-y-1">My Resume</button></li>
+      </ul>
     </header>
   )
 }

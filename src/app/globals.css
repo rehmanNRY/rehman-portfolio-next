@@ -19,18 +19,18 @@ body {
   background-image: url("../../public/me.jpg");
   background-size: cover;
   background-position: center;
-  box-shadow: 0 20px 50px -10px #bb66e2;
+  /* box-shadow: 0 16px 40px -10px #bb66e2; */
   margin: 0 auto;
 }
 
-.red-btn-shadow{
+/* .red-btn-shadow{
   box-shadow: 0 8px 20px -7px #bb66e2;
 }
 .red-btn-shadow:hover{
   box-shadow: 0 20px 80px -10px #bb66e2;
-}
+} */
 
-.css-1gtx2zw {
+/* .css-1gtx2zw {
   background-image: url(https://app.simplified.com/static/media/aw-waves-dark.3bef6a82.svg);
   background-size: contain;
   background-position: right center;
@@ -63,7 +63,7 @@ body {
   will-change: filter;
   transform: rotate(180deg);
   z-index: -10;
-}
+} */
 
 :root {
   --er: 71.76% .221 22.18;
@@ -100,4 +100,17 @@ body {
 .projects-list .project_item:nth-child(3) .project-item:hover .project-item-img,
 .projects-list .project_item:nth-child(6) .project-item:hover .project-item-img  {
   box-shadow: 0 20px 70px -10px #cd84f1;
+}
+
+
+#ballPool{
+  animation: BallPoll 2s ease;
+}
+
+@keyframes BallPoll{
+  from{
+    transform: translate(-100%, -100%);
+  } to{
+    transform: translate(0);
+  }
 }

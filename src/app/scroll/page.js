@@ -1,17 +1,25 @@
 "use client"
+import BallPool from '@/components/BallPool'
 import React from 'react'
-import { useInView } from 'react-intersection-observer';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
-
-const Page = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-  });
+const Scroll = () => {
+  // useGSAP(() => {
+  //   gsap.from(".ball-container",{
+  //     duration: 1,
+  //     delay: 1.5,
+  //     rotateX: -100,
+  //     opacity: 0,
+  //     stagger: .2,
+  //     ease: "elastic.out(1, 0.7)",
+  // })
+  // })
   return (
-    <div ref={ref} className={`${inView ? 'text-red-400' : 'text-blue-500'} pt-40`}>
-    Change my color as you scroll!
-  </div>
+    <div className='h-[100vh] w-[100vw] ball-container'>
+      <BallPool />
+    </div>
   )
 }
 
-export default Page
+export default Scroll
